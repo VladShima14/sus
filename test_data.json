@@ -1,0 +1,252 @@
+[
+{
+  "model": "core.country",
+  "pk": 1,
+  "fields": {
+    "iso_code": "ARG",
+    "name": "Argentina"
+  }
+},
+{
+  "model": "core.country",
+  "pk": 2,
+  "fields": {
+    "iso_code": "BEL",
+    "name": "Belgium"
+  }
+},
+{
+  "model": "core.country",
+  "pk": 3,
+  "fields": {
+    "iso_code": "BEL",
+    "name": "Belgium"
+  }
+},
+{
+  "model": "core.company",
+  "pk": 1,
+  "fields": {
+    "title": "Company 1",
+    "country": 1
+  }
+},
+{
+  "model": "core.company",
+  "pk": 2,
+  "fields": {
+    "title": "Company 2",
+    "country": 2
+  }
+},
+{
+  "model": "core.period",
+  "pk": 1,
+  "fields": {
+    "start": "2019-01-15",
+    "end": "2019-02-16",
+    "status": 1,
+    "agreement": 1
+  }
+},
+{
+  "model": "core.period",
+  "pk": 2,
+  "fields": {
+    "start": "2019-03-15",
+    "end": "2019-06-15",
+    "status": 2,
+    "agreement": 1
+  }
+},
+{
+  "model": "core.period",
+  "pk": 3,
+  "fields": {
+    "start": "2019-07-15",
+    "end": "2020-01-15",
+    "status": 3,
+    "agreement": 1
+  }
+},
+{
+  "model": "core.period",
+  "pk": 4,
+  "fields": {
+    "start": "2019-01-16",
+    "end": "2019-01-29",
+    "status": 2,
+    "agreement": 2
+  }
+},
+{
+  "model": "core.period",
+  "pk": 5,
+  "fields": {
+    "start": "2019-02-15",
+    "end": "2019-03-15",
+    "status": 2,
+    "agreement": 2
+  }
+},
+{
+  "model": "core.period",
+  "pk": 6,
+  "fields": {
+    "start": "2020-01-15",
+    "end": "2020-01-16",
+    "status": 2,
+    "agreement": 2
+  }
+},
+{
+  "model": "core.period",
+  "pk": 7,
+  "fields": {
+    "start": "2019-01-19",
+    "end": "2019-01-24",
+    "status": 2,
+    "agreement": 3
+  }
+},
+{
+  "model": "core.period",
+  "pk": 8,
+  "fields": {
+    "start": "2019-03-12",
+    "end": "2019-03-15",
+    "status": 1,
+    "agreement": 3
+  }
+},
+{
+  "model": "core.status",
+  "pk": 1,
+  "fields": {
+    "title": "ACTIVE"
+  }
+},
+{
+  "model": "core.status",
+  "pk": 2,
+  "fields": {
+    "title": "NEW"
+  }
+},
+{
+  "model": "core.status",
+  "pk": 3,
+  "fields": {
+    "title": "NEW"
+  }
+},
+{
+  "model": "core.status",
+  "pk": 4,
+  "fields": {
+    "title": "new"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$i5OOGa53EOtW$mW7JcI18pdpVOvuFS4jQyV0TzoV05mXvMbJvV7A83j8=",
+    "last_login": "2019-01-15T10:14:30.048Z",
+    "is_superuser": true,
+    "username": "vladshima",
+    "first_name": "",
+    "last_name": "",
+    "email": "vshemavnov@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-01-15T09:15:57.764Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$p2FhHpftUoDe$K+dbqJxQdieQAl0zZTZ1zMoBYZbzkCDnoeaI0hpg21Y=",
+    "last_login": "2019-01-15T10:16:57.839Z",
+    "is_superuser": false,
+    "username": "testuser",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-01-15T10:13:21Z",
+    "groups": [],
+    "user_permissions": [
+      15,
+      17,
+      18,
+      19,
+      20,
+      37,
+      38,
+      39,
+      40,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      41,
+      42,
+      43,
+      44,
+      33,
+      34,
+      35,
+      36,
+      21,
+      22,
+      23,
+      24
+    ]
+  }
+},
+{
+  "model": "core.agreement",
+  "pk": 1,
+  "fields": {
+    "start_date": "2019-01-15",
+    "stop_date": "2020-02-15",
+    "company": 1,
+    "negotiator": 1,
+    "debit": 15000,
+    "credit": 20000
+  }
+},
+{
+  "model": "core.agreement",
+  "pk": 2,
+  "fields": {
+    "start_date": "2019-01-15",
+    "stop_date": "2020-07-15",
+    "company": 2,
+    "negotiator": 2,
+    "debit": 15000,
+    "credit": 16000
+  }
+},
+{
+  "model": "core.agreement",
+  "pk": 3,
+  "fields": {
+    "start_date": "2019-03-15",
+    "stop_date": "2020-04-15",
+    "company": 2,
+    "negotiator": 1,
+    "debit": 100000,
+    "credit": 100000
+  }
+}
+]
